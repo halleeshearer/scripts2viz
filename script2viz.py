@@ -3,7 +3,15 @@ import os
 import ast
 import json
 import base64
-#from IPython.display import Image, display
+
+########################
+# edit these parameters!
+script_path = 'test_script.py'
+top_down = True # True for plotting the flowchart vertically, False for horizontally left to right
+export_as_md=True # True to export the flowchart to a markdown file
+output_path=None # Optionally can specify a path for the output file
+add_to_readme=True # 
+########################
 
 # Function to parse a Python script and extract functions, their inputs, and outputs
 def extract_functions(script_path):
@@ -119,7 +127,7 @@ def add_function_to_diagram(func, node_connections, mermaid_diagram, icon=True):
 #     display(Image(url=mermaid_url))
 
 # Function to create and optionally save the visualization
-def script_to_viz(script_path, top_down = True, export_as_md=True, output_path=None, add_to_readme=True):
+def script_to_viz(script_path, top_down, export_as_md, output_path, add_to_readme):
     functions = extract_functions(script_path)
     mermaid_diagram = initialize_mermaid_diagram(top_down)
     node_connections = {}
@@ -184,4 +192,4 @@ def script_to_viz(script_path, top_down = True, export_as_md=True, output_path=N
         except Exception as e:
             print(f"Error updating README.md: {e}")
 
-script_to_viz('test_script.py', top_down = True)
+script_to_viz(script_path, top_down, export_as_md, output_path, add_to_readme)
