@@ -18,41 +18,36 @@ subgraph Legend
     key3[<b>Output]:::lightBlue
     key4[<b>Intermediate</b><br> Both an input and output]:::lightPurple
 end
-go_to_seattle(("go_to_seattle")):::lightGreen
-go_to_seattle(("go_to_seattle
+calc_group_level(("calc_group_level")):::lightGreen
+calc_group_level(("calc_group_level
  fa:fa-code"))
-me:::lightRed
-me --> go_to_seattle
-airplane:::lightRed
-airplane --> go_to_seattle
-me_in_seattle:::lightBlue
-go_to_seattle --> me_in_seattle
-attend_neurohack(("attend_neurohack")):::lightGreen
-attend_neurohack(("attend_neurohack
+subject_level_data:::lightRed
+subject_level_data --> calc_group_level
+data_description:::lightRed
+data_description --> calc_group_level
+group_level_data:::lightBlue
+calc_group_level --> group_level_data
+calc_effect_map(("calc_effect_map")):::lightGreen
+calc_effect_map(("calc_effect_map
  fa:fa-code"))
-me_in_seattle --> attend_neurohack
-other_attendees:::lightRed
-other_attendees --> attend_neurohack
-new_friends:::lightBlue
-attend_neurohack --> new_friends
-new_knowledge:::lightBlue
-attend_neurohack --> new_knowledge
-two_weeks(("two_weeks")):::lightGreen
-two_weeks(("two_weeks
+group_level_data --> calc_effect_map
+effect_map:::lightBlue
+calc_effect_map --> effect_map
+confidence_intervals:::lightBlue
+calc_effect_map --> confidence_intervals
+plot_effect_map(("plot_effect_map")):::lightGreen
+plot_effect_map(("plot_effect_map
  fa:fa-code"))
-new_friends --> two_weeks
-good_food:::lightRed
-good_food --> two_weeks
-sunshine:::lightRed
-sunshine --> two_weeks
-good_times:::lightBlue
-two_weeks --> good_times
-me:::lightRed
-airplane:::lightRed
-me_in_seattle:::lightPurple
-other_attendees:::lightRed
-new_friends:::lightPurple
-new_knowledge:::lightBlue
-good_food:::lightRed
-sunshine:::lightRed
-good_times:::lightBlue
+effect_map --> plot_effect_map
+confidence_intervals --> plot_effect_map
+plot:::lightBlue
+plot_effect_map --> plot
+happiness:::lightBlue
+plot_effect_map --> happiness
+subject_level_data:::lightRed
+data_description:::lightRed
+group_level_data:::lightPurple
+effect_map:::lightPurple
+confidence_intervals:::lightPurple
+plot:::lightBlue
+happiness:::lightBlue
