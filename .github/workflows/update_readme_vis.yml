@@ -1,0 +1,40 @@
+name: Update README vis
+
+on: 
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  run-viz-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Run script2viz.py
+      run: python script2viz.py
+
+    - name: Debug - Check for README changes
+      run: |
+        git diff README.md
+        git status
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.name "github-actions"
+        git config --local user.email "actions@github.com"
+        git add README.md
+        git commit -m "Update README.md with new Mermaid diagram" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
