@@ -6,7 +6,7 @@ import base64
 
 ########################
 # edit these parameters!
-script_path = 'test_script.py'
+script_path = 'demo_script.py'
 top_down = True # True for plotting the flowchart vertically, False for horizontally left to right
 export_as_md=True # True to export the flowchart to a markdown file
 output_path=None # Optionally can specify a path for the output file
