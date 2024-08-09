@@ -1,5 +1,5 @@
 # scripts2viz
-A tool to visualize the flow of inputs, outputs, functions within scripts.
+A tool to visualize the flow of inputs, outputs, and functions within scripts.
 
 ## Instructions:
 - Copy scripts2viz.py and .github/workflows/update_readme_vis.yml to your directory
