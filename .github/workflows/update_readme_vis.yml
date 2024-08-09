@@ -33,8 +33,8 @@ jobs:
       run: |
         git config --local user.name "github-actions"
         git config --local user.email "actions@github.com"
-        git add README.md
-        git commit -m "Update README.md with new Mermaid diagram" || echo "No changes to commit"
+        git add README.md flowchart.md flowchart.mmd
+        git commit -m "Update README.md, flowchart.md, and/or flowchart.mmd with new Mermaid diagram" || echo "No changes to commit"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
