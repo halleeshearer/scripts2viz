@@ -46,16 +46,16 @@ new_friends:::lightBlue
 attend_neurohack --> new_friends
 new_knowledge:::lightBlue
 attend_neurohack --> new_knowledge
-plot_effect_map(("plot_effect_map")):::lightGreen
-plot_effect_map(("plot_effect_map
+two_weeks(("two_weeks")):::lightGreen
+two_weeks(("two_weeks
  fa:fa-code"))
-new_friends --> plot_effect_map
+new_friends --> two_weeks
 good_food:::lightRed
-good_food --> plot_effect_map
+good_food --> two_weeks
 sunshine:::lightRed
-sunshine --> plot_effect_map
+sunshine --> two_weeks
 good_times:::lightBlue
-plot_effect_map --> good_times
+two_weeks --> good_times
 me:::lightRed
 airplane:::lightRed
 me_in_seattle:::lightPurple
