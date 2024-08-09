@@ -1,6 +1,11 @@
 # scripts2viz
 A tool to visualize the flow of inputs, outputs, functions within scripts.
 
+## Instructions:
+- Copy scripts2viz.py and .github/workflows/update_readme_vis.yml to your directory
+- Edit scripts2viz.py to change parameters at the top of the script if necessary
+- Any commits made to the repo should then trigger the workflow to update the README.md file's visualization
+
 ```mermaid
  %%{init: {'theme':'base', 'themeVariables': {
   'primaryColor': '#ffcaca',
