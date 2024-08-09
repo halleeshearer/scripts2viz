@@ -13,7 +13,7 @@ def attend_neurohack(me_in_seattle, other_attendees):
 
 # A template for a function that takes an effect_map and returns a plot
 
-def plot_effect_map(new_friends, good_food, sunshine):
+def two_weeks(new_friends, good_food, sunshine):
     plot = effect_map
     happiness = "Alex"
     
