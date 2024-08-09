@@ -6,7 +6,7 @@ import base64
 
 #########################
 # EDIT THESE PARAMETERS #
-script_path = 'neurohackademy.py'
+script_path = 'demo_script.py'
 
 # Optional:
 top_down = True # True for plotting the flowchart vertically, False for horizontally left to right
