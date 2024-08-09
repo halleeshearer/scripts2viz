@@ -11,7 +11,7 @@ script_path = 'demo_script.py'
 # Optional:
 top_down = True # True for plotting the flowchart vertically, False for horizontally left to right
 export_as_md=True # True to export the flowchart to a markdown file
-output_path= "output/" # Optionally can specify a path for the output file
+output_path= None # Optionally can specify a path for the output file
 add_to_readme=True  
 ########################
 
