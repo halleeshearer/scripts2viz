@@ -1,6 +1,8 @@
 # scripts2viz
 A tool to visualize the flow of inputs, outputs, and functions within scripts.
 
+(The result of a Neurohackademy 2024 hackathon project by Hallee Shearer and Alex Fischbach)
+
 ## Instructions:
 - Copy scripts2viz.py and .github/workflows/update_readme_vis.yml to your directory
 - Edit scripts2viz.py to change parameters at the top of the script if necessary
