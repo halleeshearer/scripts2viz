@@ -24,8 +24,8 @@ go_to_seattle(("go_to_seattle
  fa:fa-code"))
 me:::lightRed
 me --> go_to_seattle
-airplane:::lightRed
-airplane --> go_to_seattle
+bus:::lightRed
+bus --> go_to_seattle
 me_in_seattle:::lightBlue
 go_to_seattle --> me_in_seattle
 attend_neurohack(("attend_neurohack")):::lightGreen
@@ -49,7 +49,7 @@ sunshine --> two_weeks
 good_times:::lightBlue
 two_weeks --> good_times
 me:::lightRed
-airplane:::lightRed
+bus:::lightRed
 me_in_seattle:::lightPurple
 other_attendees:::lightRed
 new_friends:::lightPurple
