@@ -1,6 +1,6 @@
 # A script about Neurohackademy
 
-def go_to_seattle(me, airplane):
+def go_to_seattle(me, bus):
     
 
     return me_in_seattle
